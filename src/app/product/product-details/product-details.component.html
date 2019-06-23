@@ -1,0 +1,6 @@
+<h1>Product Details are as Follows : </h1>
+<ul *ngIf='isLoaded'>
+  <li>Product Id = {{product.id}}</li>
+  <li>Product Name ={{product.name}}</li>
+</ul>
+<button [routerLink]="['/product']">Back</button>

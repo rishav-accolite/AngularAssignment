@@ -1,0 +1,13 @@
+<div class="table-responsive">  
+<table class="table table-bordered">
+  <thead class="thead-dark">
+  <tr>
+    <th>Product Id</th>
+    <th>Product Name</th>
+  </tr>
+</thead>
+  <tr *ngFor='let product of products;index as i'>
+    <td><a [routerLink]="['./',product.id]">{{product.id}}</a></td>
+    <td>{{product.name}}</td>
+  </tr>
+</table>
